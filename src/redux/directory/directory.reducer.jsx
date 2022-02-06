@@ -1,36 +1,44 @@
 const INITIAL_STATE = {
     sections: [
         {
-            title: "hats",
-            imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+            title: "Chase dinning",
+            imageUrl: "rewards-img/dinning-3.jpeg",
             id: 1,
-            linkUrl: "shop/hats"
+            linkUrl: "shop/dinning"
         },
         {
-            title: "jackets",
-            imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
+            title: "Travel",
+            imageUrl: "rewards-img/travel-1.jpeg",
             id: 2,
-            linkUrl: "shop/jackets"
+            linkUrl: "shop/travel"
         },
         {
-            title: "sneakers",
-            imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
+            title: "Experiences",
+            imageUrl: "rewards-img/experience-1.jpeg",
             id: 3,
-            linkUrl: "shop/sneakers"
+            linkUrl: "shop/experience"
         },
         {
-            title: "womens",
-            imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
+            title: "Gift Cards",
+            imageUrl: "rewards-img/gift-amazon.png",
             size: "large",
             id: 4,
-            linkUrl: "shop/womens"
+            linkUrl: "shop/gift-card"
         },
         {
-            title: "mens",
-            imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
+            title: "Eletronics",
+            imageUrl: "rewards-img/eletr-5.jpg",
             size: "large",
             id: 5,
-            linkUrl: "shop/mens"
+            linkUrl: "shop/eletronic"
+        },
+        ,
+        {
+            title: "Transfer coins",
+            imageUrl: "rewards-img/transfer.png",
+            size: "large",
+            id: 6,
+            linkUrl: "shop/transfer-coin"
         }
     ]
 }

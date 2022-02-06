@@ -1,0 +1,7 @@
+add new categories:
+    - chase dinning - ok
+    - travel - ok
+    - experiences - ok
+    - gift cards - OK
+    - transfer to collegues
+    - eletronics - ok
