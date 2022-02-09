@@ -16,8 +16,10 @@ const CollectionsOverview = ({ collections }) => (
     </div>
 )
 
-const mapStateToProps = createStructuredSelector({
-    collections: selectCollections,
-})
+// const mapStateToProps = createStructuredSelector({
+//     collections: selectCollections,
+// })
 
-export default connect(mapStateToProps)(CollectionsOverview)
+// export default connect(mapStateToProps)(CollectionsOverview)
+
+export default CollectionsOverview

@@ -1,9 +1,12 @@
 import React from 'react';
 import CollectionsOverview from '../../components/collections-overview/collections-overview.component'
 
-const ShopPage = ({ collections }) => (
+
+import collections from '../../data/products.json';
+
+const ShopPage = () => (
     <div className='shop-page'>
-        <CollectionsOverview />
+        <CollectionsOverview collections={collections} />
     </div>
 )
 

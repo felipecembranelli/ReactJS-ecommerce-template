@@ -40,7 +40,7 @@ const Header = ({ currentUser, hidden, accounts }) => (
       {/* <p className="king">#169 2021</p> */}
       {/* <p className="king">{account}</p> */}
       <Link className="option" to="/user-detail">
-        ACC #{accounts[0]}
+        ACC #
       </Link>
     </div>
     {

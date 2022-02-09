@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 
-const selectUser = state => state.user;
+const selectWeb3 = state => state.accounts;
 
 export const selectCurrentUser = createSelector(
     [selectUser],
