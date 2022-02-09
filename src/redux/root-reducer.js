@@ -6,6 +6,8 @@ import userReducer from './user/user.reducer.js'
 import cartReducer from './cart/cart.reducer.js'
 import directoryReducer from './directory/directory.reducer'
 import shopReducer from './shop/shop.reducer'
+import { FetchAccountsReducer } from './Web3/fetchAccountsWeb3';
+import { FetchNetworkReducer } from './Web3/fetchNetworkWeb3';
 
 
 const persistConfig = {
@@ -19,6 +21,8 @@ const rootReducer = combineReducers({
   cart: cartReducer,
   directory: directoryReducer,
   shop: shopReducer,
+  accounts: FetchAccountsReducer,
+  network: FetchNetworkReducer,
 })
 
 export default persistReducer(persistConfig, rootReducer)

@@ -13,7 +13,7 @@ import { selectCurrentUser } from '../../redux/user/user.selector.js';
 
 import './header.styles.scss';
 
-const Header = ({ currentUser, hidden, account }) => (
+const Header = ({ currentUser, hidden, accounts }) => (
   <div className="header">
     <Link className="logo-container" to="/">
       <Logo className="logo" />
@@ -40,7 +40,7 @@ const Header = ({ currentUser, hidden, account }) => (
       {/* <p className="king">#169 2021</p> */}
       {/* <p className="king">{account}</p> */}
       <Link className="option" to="/user-detail">
-        {account}
+        ACC #{accounts[0]}
       </Link>
     </div>
     {
@@ -53,7 +53,13 @@ const Header = ({ currentUser, hidden, account }) => (
 
 const mapStateToProps = createStructuredSelector({
     currentUser: selectCurrentUser,
-    hidden: selectCartHidden
+    hidden: selectCartHidden,
 })
+
+// const mapStateToProps = state => {
+//   const { accounts } = state.accounts;
+
+//   return { accounts };
+// };
 
 export default connect(mapStateToProps)(Header)
