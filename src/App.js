@@ -10,7 +10,7 @@ import Header from './components/header/header.component'
 
 import { createStructuredSelector } from 'reselect';
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils.js";
-import { connect } from 'react-redux';
+//import { connect } from 'react-redux';
 import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selector';
 import { Web3Provider } from './components/Web3/Web3Provider';
@@ -85,7 +85,7 @@ class App extends React.Component{
       <div>
         {/* <Header account={this.state.account} /> */}
         <Header />
-        <Web3Provider />
+        {/* <Web3Provider /> */}
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
@@ -109,12 +109,13 @@ class App extends React.Component{
   }  
 }
 
-const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser
-}) 
+// const mapStateToProps = createStructuredSelector({
+//   currentUser: selectCurrentUser
+// }) 
 
-const mapDispatchToProps = dispatch =>({
-  setCurrentUser: user => dispatch(setCurrentUser(user))
-})
+// const mapDispatchToProps = dispatch =>({
+//   setCurrentUser: user => dispatch(setCurrentUser(user))
+// })
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+//export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;
